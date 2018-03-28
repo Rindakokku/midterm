@@ -39,6 +39,8 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <a href="{{route('contact')}}">Contact</a>
+                        <li><a href="{{route('about')}}">About</a></li>
                         <!-- Authentication Links -->
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
