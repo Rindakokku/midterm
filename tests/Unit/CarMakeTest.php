@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Car;
 
-class DatabaseCountTest extends TestCase
+class CarMakeTest extends TestCase
 {
     /**
      * A basic test example.
@@ -16,8 +16,8 @@ class DatabaseCountTest extends TestCase
      */
     public function testExample()
     {
-        $carCount = Car::count();
-        echo $carCount;
-        $this->assertTrue(true);
+        $car = Car::inRandomOrder()->first();
+        $value=$car->make;
+        $this->assertContains($value, ['honda','toyota','ford']);
     }
 }
