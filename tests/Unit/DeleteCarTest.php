@@ -17,9 +17,9 @@ class DeleteCarTest extends TestCase
      */
     public function testExample()
     {
-        $car = Car::find(11);
+        $car = Car::find(10);
         if (!is_null($car)) {
-            $car->destroy(11);
+            $car->destroy(10);
             $this->assertTrue($car->save());
         }
         $this->assertTrue($carr = !NULL);

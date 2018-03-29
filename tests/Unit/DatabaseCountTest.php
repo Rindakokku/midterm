@@ -17,7 +17,7 @@ class DatabaseCountTest extends TestCase
     public function testExample()
     {
         $carCount = Car::count();
-        echo $carCount;
+        //echo $carCount;
         $this->assertTrue(true);
     }
 }
